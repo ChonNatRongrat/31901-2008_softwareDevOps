@@ -1,95 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
 
 * {
-    font-family: "Mitr", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Mitr", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-    justify-items: center;
-    margin: 1rem 0;
+  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .box_01 {
-    width: 387px;
-    height: 688px;
+  width: 387px;
+  height: 688px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  h1 {
+    margin: 20px 0;
+  }
+
+  .atop {
+    width: 100%;
+    text-align: end;
+    padding-right: 14px;
+    margin: 20px 0;
+    color: #0a2840;
+  }
+
+  .otherbtn {
+    width: 300px;
+    background-color: transparent;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+    border-radius: 30px;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px;
+    cursor: pointer;
+    margin: 15px 0;
+  }
 
-    h1 {
-        margin: 20px 0;
-    }
+  hr {
+    border: 2px dashed black;
+    width: 60%;
+    margin: 15px;
+  }
 
-    .atop {
-        width: 100%;
-        text-align: end;
-        padding-right: 14px;
-        margin: 20px 0;
-        color: #0a2840;
-    }
+  p {
+    margin: 12px 0;
+  }
 
-    .otherbtn {
-        width: 300px;
-        background-color: transparent;
-        border: 1px solid black;
-        border-radius: 30px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding: 2px;
-        cursor: pointer;
-        margin: 15px 0;
+  input[type="submit"] {
+    color: white;
+    background-color: #27cd12;
+    width: 80%;
+    padding: 12px;
+    border: transparent;
+    border-radius: 14px;
+    margin: 15px 0;
+    cursor: pointer;
+  }
 
-    }
-
-    hr {
-        border: 2px dashed black;
-        width: 60%;
-        margin: 15px;
-    }
-
-    p {
-        margin: 12px 0;
-    }
-
-    input[type="submit"] {
-        color: white;
-        background-color: #27cd12;
-        width: 80%;
-        padding: 12px;
-        border: transparent;
-        border-radius: 14px;
-        margin: 15px 0;
-    }
-
-    input[type="text"],
-    input[type="password"] {
-        border: 2px black dashed;
-        width: 80%;
-        padding: 12px;
-        border-radius: 14px;
-        margin: 15px 0;
-    }
+  input[type="text"],
+  input[type="password"] {
+    border: 2px black dashed;
+    width: 80%;
+    padding: 12px;
+    border-radius: 14px;
+    margin: 15px 0;
+  }
 }
 
 .box_02 {
-    width: 387px;
-    height: 688px;
+  width: 387px;
+  height: 688px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  input[type="search"] {
+    border: 2px black dashed;
+    width: 80%;
+    padding: 12px;
+    border-radius: 14px;
+    margin: 15px 0;
+  }
+
+  .formstyle {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+
+  .nav_menu {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu_card {
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
     border: 1px solid black;
+
+    img {
+      margin: 0 15px 0 0;
+    }
+  }
+
+  .incard_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    align-items: center;
+  }
 
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px solid black;
+    height: max-content;
+  }
+  .footermenu {
+    margin: 13px 0;
+    text-align: center;
+  }
 }
