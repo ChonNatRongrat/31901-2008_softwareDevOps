@@ -1,20 +1,26 @@
+/* main.css */
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
 
-* {
-  font-family: "Mitr", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@media screen and (min-width: 387px) {
+    
+    * {
+      font-family: "Mitr", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 }
 
 body {
   justify-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
   overflow-x: auto;
+  overflow-y: auto;
   white-space: nowrap;
 }
 
@@ -155,5 +161,12 @@ body {
   .footermenu {
     margin: 13px 0;
     text-align: center;
+  }
+
+  .inner_menu_card {
+
+    button[type="button"] {
+      margin: 12px 0;
+    }
   }
 }
